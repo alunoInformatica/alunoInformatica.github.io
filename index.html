@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Luiz Felipe | Dev Portfolio</title>
+</head>
+<body class="bg-zinc-900">
+   <header class="p-4 w-full">
+    <nav class="bg-zinc-800 w-full p-3 rounded-md flex items-center justify-between relative">
+        <div>
+            <h1 class="text-white font-extrabold text-3xl">LuizF<span class="text-sky-900">Dev</span></h1>
+        </div>
+        <div class="max-md:hidden">
+            <ul class="text-white flex">
+                <li class="px-4">Home</li>
+                <li class="px-4">About Me</li>
+                <li class="px-4">Projects</li>
+                <li class="px-4">Contact Me</li>
+            </ul>
+        </div>
+        <div class="hidden max-md:block">
+            <img id="btn-menu-mobile" onclick="menuMobileShow()" class="text-white w-6" src="./assets/icons/bars-solid.svg" alt="bars-solid">
+        </div>
+        <div id="menu-mobile" class="menu max-md:bg-zinc-800 w-full rounded-b-md absolute overflow-hidden">
+            <ul class="text-white py-4 pl-4 flex flex-col gap-2">
+                <a class="bg-zinc-900 mr-4 rounded-md p-2" href="#">Home</a>
+                <a class="bg-zinc-900 mr-4 rounded-md p-2" href="#">About Me</a>
+                <a class="bg-zinc-900 mr-4 rounded-md p-2" href="#">Projects</a>
+                <a class="bg-zinc-900 mr-4 rounded-md p-2" href="#">Contact Me</a>
+            </ul>
+        </div>
+    </nav>
+   </header>
+    
+   <script src="script.js"></script>
+</body>
+</html>

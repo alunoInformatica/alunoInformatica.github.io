@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .menu {
+        visibility: hidden;
+        transition: 0.5s;
+        top: 50px;
+        left: 0;
+        height: 0;
+    }
+
+    .menu-mobile-show {
+        visibility: visible;
+        transition: 0.8s;
+        height: calc(270px - 50px);
+    }
+}
